@@ -1,0 +1,206 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Cost</title>
+        <link rel="stylesheet"href="css/style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1700px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1400px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1200px)"> 
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1000px)"> 
+             
+<style>
+
+.header{
+   background-image:url("image/제목을-입력해주세요_-001.png");
+   height:580px;
+   
+}
+ul{
+    display:inline-block;
+    list-style:none;
+}
+
+ul li {
+    list-style:none;
+    float:left;
+    font-size:1.15rem;
+   
+    margin:0rem 3rem;
+    padding-top:0px;
+    margin-top:10px;
+    
+   }
+ul li:hover{
+    transform:translateY(-5px);
+}   
+   li a{
+    color:#354e35;
+   }
+   li a:hover{
+       color:#e5a039;
+   }
+
+ #g hr{
+  margin-bottom:50px;
+    background-color:#354e35;
+    height: 2px;
+    width: 500px;
+    margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .ct{/*잔액조회 레이아웃*/
+width:500px;
+height:300px;
+background-color: white;
+
+padding-top:26px;
+
+margin-left: auto;
+     margin-right: auto;
+     margin-bottom:100px;
+ }
+ .ct1{
+    
+    font-size: 30px;
+    text-align:center;
+    font-family:'Happiness-Sans-Title';
+    color:#354e35;
+    margin-bottom:40px;
+    border-collapse:collapse;
+    display:block;
+ }
+ p{
+     text-align: center;
+     margin-bottom:23px;
+ }
+ table caption{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:5px;
+ }
+.ct3{
+    margin-left:20px;
+    border-top:none;
+    border-left: none; border-right: none; 
+
+ }
+ .ct3 hr{
+    background-color:#354e35;
+    height: 0.5px;
+ }
+ table{/*조회결과 테이블*/
+   border-color: lightgray;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ table th{
+   background-color: #354e35;
+   color:white;
+   padding:5px 10px;
+ }
+ table td{
+   padding:0px 30px;
+ }
+ hr{
+  margin-bottom:80px;
+    background-color:#354e35;
+    height: 2px;
+    width: 1200px;
+    margin-left: auto;
+     margin-right: auto;
+ }
+</style>
+    </head>
+    <body>
+    
+        <div class="header" style="text-align:center;"><!--헤더-->
+            <div class="d1">
+                <a href="main.html">PurmeeSearch</a><!--메인로고-->
+            </div>
+            
+            <div class="nav"><!--메뉴-->
+                <ul>
+                  <li><a  href="WelfareIntro.html">아동급식카드</a></li>
+                    <li><a  href="Intro.html">푸르미 카드 소개</a></li> 
+                    <li><a class="show1">잔액조회</a></li>
+                    <li><a  href="Franchise.html">가맹점 조회</a></li>
+                    <li><a  href="Board.html">공지사항</a></li>
+                    <li><a  href="Service.html">고객센터</a></li>
+                </ul>   
+              
+                     
+            </div>
+         
+    </div> <!--헤더-->
+
+    <div class="sb"><!--서브제목-->
+        카드 잔액 조회 결과
+      </div>
+      <div id="g"><hr></div>
+
+      <div class="ct"><!--잔액조회 레이아웃-->
+        <div class="ct1">카드잔액조회</div>
+        <p>고객님의 카드 잔액정보는 다음과 같습니다.</p>
+        <table border="1">
+          <caption>조회결과</caption>
+          <tr>
+            <th>카드번호</th>
+            <td>1111-1111-1111</td>
+          </tr>
+          <tr>
+            <th>현재잔액</th>
+            <td>56,250원</td>
+          </tr>
+        </table>
+      
+      
+        
+      </div>
+      <div id="qq"><button class="show"></button></div>
+      
+      <div class="background">
+        <div class="window">
+          <div class="popup">
+            <div class="w1">카드잔액조회</div>
+            <div class="w2">
+                <form action="">
+
+                    <input  type="text"  placeholder="카드번호12자리" id="111111111111" maxlength="12" minlength="12" autofocus required>
+                    <input type="submit" value="잔액조회"> 
+                    </form>
+                    
+
+                </div>
+
+
+
+
+            <button class="close" >닫기</button><br><br>
+          <p>카드 앞면의 카드번호 12자리를<br> 입력하고 잔액조회 버튼을 눌러주세요</p>  
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      
+                 <div class="arrow"><a href="#top"><img src="image/arw.svg"width="70px" height="70px" ></a></div>
+                 <footer>
+            
+                  <div class="sequrity"><a href="pri.html">개인정보처리방침</a>&nbsp&nbsp&nbsp문의사항 1544-3674</div>
+                 
+                <div class="text">
+                 (주)푸르미코리아 | 대표이사 : 홍영복 | 주소 : 인천광역시 부평구 부평대로 283 우림라이온스밸리 C동 1202호 | <br>사업자 등록번호 : 122-86-06593 | 고객센터 : 1544-3674 , 032)330-3364 (운영시간 : 평일 08:00~24:00 / 토, 일, 법정공휴일 09:00~24:00)
+               </div>
+           
+               </footer>
+               <script src="js/scrt.js"></script>
+        </body>
+      
+   
+</html>

@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2? family= 연+성 & display=swap');
+
+
+
+
+
+:root{
+    font-size:22px;
+   
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@미디어쿼리@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@media screen and (max-width:1700px){
+    :root{
+      font-size:19px;
+     
+    }
+    
+   }
+   @media screen and (max-width:1400px){
+    :root{
+      font-size:17px;
+    }
+   
+   }
+  
+   @media screen and (max-width:1200px){
+    :root{
+      font-size:14px;
+    }
+   
+   }
+  
+   @media screen and (max-width:1000px){
+    :root{
+      font-size:12px;
+    }
+    
+   }
+  /*@@@@@@@@@@@@@@@@@@@@@@@@@미디어쿼리@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+   
+*{
+    text-decoration:none;
+    border-collapse:collapse;
+    margin:0;
+    padding:0;
+    
+}
+body{
+    
+    /*background-color: #EEEEEE;*/
+    background-color: #E3E3E3;
+    font-family: '연성', 필기체;
+}
+.header{/*웹페이지 헤더*/
+    list-style: none;
+    position:relative;
+   background-repeat:no-repeat;
+   background-size:cover;
+   width:100%;
+    font-family:'Happiness-Sans-Title';
+}
+.header .nav{
+    float:left;
+    text-align:center;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.header p{
+    text-align:center;
+    font-size:42px;
+    color:#354e35;
+}/*웹페이지 헤더*/
+
+.d1 {/*로고 제목*/
+    font-family:"Hobo Std","Cooper Black","Arial";
+    font-size: 2.2rem;
+    text-align:center;
+    
+    padding-top:22px;
+    margin-bottom: 28px;
+   }
+   .d1:hover{
+    transform:translateY(-5px);
+    
+   }
+   .d1 a{
+    color:#354e35;
+   }
+   .d1 a:hover{
+    color:#e5a039;
+   }
+
+.sb{/*main페이지를 제외한 나머지 페이지의 body 제목*/
+    margin-top:100px;
+    font-family:'Happiness-Sans-Title';
+    color:#354e35;
+    font-size: 40px;
+    margin-bottom:15px;
+    
+    text-align: center;
+    
+   }/*메인페이지 잔액조회 배너*/
+   .ban{
+    width:100%;
+    margin-bottom: 0px;
+    margin-top:0px;
+    display:block;
+}
+   #qq{    
+    opacity:0;
+}
+input{/*input type 틀*/
+    font-size: 19px;
+    width:220px;
+    height:33px;
+    margin-bottom:10px;
+    
+}
+#gy{/*메인 페이지 간단 문구(결식 어린이를...)*/
+    margin-top:260px;
+    font-size:2rem;
+    text-align:center;
+      color:#354e35;
+  }
+  #gy:hover{
+    transform:translateY(-10px);
+  }
+  /*@@@@@@@@@@@@@@@@@@@팝업창@@@@@@@@@@@@@@@@@@*/
+.background { /*화면 전체를 어둡게 만들어주는 배경(background)*/
+    position: fixed; /*position fixed  스크롤이 발생하더라도 화면에 고정*/
+    top: 0;
+    left: 0;/*팝업창offset 좌표 0,0(중앙)*/
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+
+    /*평소에는 숨기기 */
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .show {/*팝업창 띄우기 버튼 클릭 시*/
+    opacity: 1;
+    z-index: 1000;
+    transition: all 0.5s; /*투명도와 위치가 원래대로 나타나게*/
+    
+  }
+  .show1 {
+    opacity: 1;
+    z-index: 1000;
+    transition: all 0.5s;
+    
+  }
+
+  .window {/*모달 팝업을 감싸주는 창. 배경안에 팝업이 들어갈 공간을 지정*/
+    position: relative;
+    width: 100%;
+    height: 100%;/*배경 가득차게*/
+  }
+
+  .popup {/*모달 팝업의 내용*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*가운데 위치*/
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    
+    
+    width: 300px;
+    height: 350px;/*보여지는 팝업 창 크기*/
+
+    /* 초기에 약간 아래에 배치 */
+    transform: translate(-50%, -40%);
+  }
+
+  .show .popup {
+    transform: translate(-50%, -50%);/*transform 조정하여 아래에서 올라오는 모션*/
+    transition: all 0.5s;
+  }
+  .show1 .popup {
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+  }
+  .popup p{
+      font-size:small;
+      text-align:center;
+  }
+
+  button.show{/*show 버튼(팝업창 생성버튼) 스타일 지정*/
+    position:absolute;
+       top:300px;
+       left:350px;
+       width:300px;/*버튼 좌표 설정*/
+       height:50px;
+       background-color:#3b5a3b;
+       color:white;
+       font-size:32px;
+        font-weight:normal;
+        border-style: none;
+}
+button.show1{
+    position:absolute;
+       top:260px;
+       left:260px;
+       width:300px;
+       height:50px;
+       background-color:#3b5a3b;
+       color:white;
+       font-size:25px;
+        font-weight: bold;
+        border-style: none;
+}
+button.show:hover{
+    transform:translateY(-5px);
+}
+button.show1:hover{
+    transform:translateY(-5px);
+}
+
+.w1{/*팝업창 제목*/
+    margin-top:30px;
+    font-size: 30px;
+    text-align:center;
+    font-family:'Happiness-Sans-Title';
+    color:#354e35;
+    margin-bottom:60px;
+    border-collapse:collapse;
+    display:block;
+}
+.w2{/*팝업창 내용*/
+    text-align:center;
+    border-collapse:collapse;
+    display:block;
+}
+button.close{/*팝업창 닫기 버튼*/
+    position: relative;
+    width:220px;
+    height:33px;
+    font-size: 19px;
+       left:40px;
+}
+
+button.close1{
+    position: relative;
+    width:220px;
+    height:33px;
+    font-size: 19px;
+       left:40px;
+} /*@@@@@@@@@@@@@@@@@@@팝업창@@@@@@@@@@@@@@@@@@*/
+
+
+
+ 
+footer{/*푸터*/
+    background-color:#2a3c2a;
+    position : relative;
+    bottom : 0;/*포지션 absolute, bottom 0으로 푸터 하단 고정*/
+    max-width:100%;/*가로 꽉채우기*/
+    text-align:center;
+    padding:10px;
+    font-size: large;
+    height:130px;
+    padding-top:40px;
+    
+    color:white;
+    font-family:"Arial";
+
+}
+footer .sequrity{
+    margin-bottom:20px;
+}
+footer a{
+    font-size: large;
+    text-align:center;
+    color:white;
+    font-family:"Arial";
+}
+footer a:hover{
+    color:#e5a039;
+}
+.arrow{/*페이지 최상단 이동버튼*/
+    position:fixed;
+    bottom:8px;
+    right:8px;
+    z-index:1;
+    filter:brightness(140%);/*이미지 밝게*/
+}
+  
+   .all{/*잔액조회 배너*/
+    position:relative;
+}
+
+   pre{
+    text-align: center;
+     font-size: 1rem;
+   }
+   .pr{/*개인정보 처리방침 페이지*/
+    text-align: center;
+    margin-bottom:200px;
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-bottom:50px;
+   }
+   
+ select{
+    font-size: 19px;
+    width:220px;
+    height:33px;
+    margin:5px;
+ }
+ #bon{/*가맹점 안내 페이지 검색 틀*/
+    background-color: white;
+     border: 2px solid #354e35;
+     width:1200px;
+     padding-top:24px;
+     text-align:center;
+     height:110px;
+     margin-left: auto;
+     margin-right: auto;
+    
+ }
+ label {
+    margin-left:20px;
+    font-size:20px;
+    font-size:1rem; 
+    font-family: '연성', 필기체;
+ }
+ #bon input{/*가맹점 안내 페이지 input type*/
+    font-size: 19px;
+    width:220px;
+    height:28px;
+    margin:5px;
+    margin-left:22px;
+ }
+ .map{
+    border:1px solid #354e35;
+     margin-top:0px;
+     padding:0px;
+    width:1200px;
+    text-align:center;
+    margin-left: auto;
+     margin-right: auto;
+     height:900px;
+     margin-bottom:100px;
+    
+ }

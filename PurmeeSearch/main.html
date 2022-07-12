@@ -1,0 +1,233 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+        <title>PurmeeSearch</title>
+        <link rel="stylesheet"href="css/style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1700px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1400px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1200px)"> 
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1000px)"> <!--미디어 쿼리-->
+             
+ 
+   
+
+
+
+<style>
+  
+.header{/*메인 헤더 이미지*/
+  background-image:url("image/4909447.jpg");
+  height:1200px;
+}
+ul{/*메뉴 바 ul 기능 엉켜서 따로 정의*/
+    display:inline-block;
+    list-style:none;
+}
+
+ul li {
+    list-style:none;
+    float:left;
+    font-size:1.15rem;
+    /*margin:0px 60px;*/
+    margin:0rem 3rem;
+    padding-top:0px;
+    margin-top:10px;
+    
+   }
+ul li:hover{
+    transform:translateY(-5px);/*마우스 오버 시 레이아웃 움직임*/
+}   
+   li a{
+    color:#354e35;/*링크달린 메뉴 li*/
+   }
+   li a:hover{/*메뉴 마우스 오버 시 색상 변경*/
+       color:#e5a039;
+   }
+   /*자주 묻는 질문 배너 버튼*/
+   .bten{
+    position:absolute;/*부모 엘리먼트로 부터 독립*/
+    top:2100px;/*버튼 이미지의 위아래 좌표 지정 offset 속성*/
+    left:1600px; /*발표용 컴퓨터 해상도 전용*/ /*버튼 이미지의 왼쪽 오른쪽 좌표 지정 offset 속성*/
+    /*left:1400px; 학교 컴퓨터 전용*/
+    width:230px;
+    height:40px;
+    background-color:#3b5a3b;
+    color:white;
+    font-size:25px;
+     font-weight: bold;
+     border-style: none;
+     z-index: 5;/*버튼 이미지 레이아웃 순서 지정(가려지지 않게)*/
+}
+.bten button{
+  position:absolute;
+  width:230px;
+  height:40px;
+  background-color:#3b5a3b;
+  color:white;
+  font-size:25px;
+   
+   border-style: none;
+}
+.bten:hover{
+  transform:translateY(-5px);/*마우스 오버 시 레이아웃 움직임*/
+}
+
+/*슬라이드*/
+
+.swiper-container {
+  
+  height:350px;/*슬라이드 배너 높이 값*/
+  background-color: #FDFCF3;
+}
+.swiper-slide {
+  text-align:center;
+  display:flex; /* 내용(레이아웃)을 중앙정렬 하기위해 display:flex 사용 */
+  align-items:center; /* 위아래 기준 중앙정렬 */
+  justify-content:center; /* 좌우 기준 중앙정렬 */
+}
+.swiper-slide:hover{
+  transform:translateY(7px);/*마우스 오버 시 레이아웃 움직임*/
+}
+
+.swiper-slide img {
+  max-width:100%; /* 레이아웃 최대너비를 제한, 슬라이드에 레이아웃이 여러개가 보여질때 필요 */
+  
+}
+ 
+.c1{ /*슬라이드 배너 속 레이아웃*/
+  background-color: white;
+  width:430px;
+  height:270px;
+  border-radius: 25px;
+  border: 2px solid #3b5a3b;
+}
+.c2{/*레이아웃 제목*/
+  text-align: center;
+  color:#3b5a3b;
+  font-size:28px;
+  font-weight: bold;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.c3{/*레이아웃 내용*/
+  width:390px;
+  font-size:21px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+hr{
+  background-color:#354e35;
+  height: 2.5px;
+  
+}
+</style>
+
+    </head>
+    <body>
+    
+        <div class="header" style="text-align:center;">
+        <div class="d1"><!--메인 로고-->
+            <a href="main.html">PurmeeSearch</a>
+        </div>
+        <div class="nav">
+            <ul>
+              <li><a  href="WelfareIntro.html">아동급식카드</a></li>
+                <li><a  href="Intro.html">푸르미 카드 소개</a></li> 
+                <li><a class="show1">잔액조회</a></li>
+                <li><a  href="Franchise.html">가맹점 조회</a></li>
+                <li><a  href="Board.html">공지사항</a></li>
+                <li><a  href="Service.html">고객센터</a></li>
+            </ul> <!--///메뉴-->  
+
+           <div id="gy">결식 어린이를 위한 푸르미 카드<br>
+            가맹점을 찾아줍니다
+            </div>
+            <div>   
+            </div>   
+        </div>
+</div> <!--////헤더-->
+            <div class="all">
+            <div class="ban"><img src="image/re1.png" width="100%"height="500px" style="display:block;"></div>
+          <button class="show">간편 잔액조회</button><!--잔액조회 팝업 이동 버튼 클릭시 잔액조회 팝업창 생성 js-->
+            
+        </div><!--잔액조회 배너-->
+           <div id="hrre"><hr></div><!--잔액조회 배너와 질문 배너 구분 줄--> 
+           
+           <!-- 예제 시작 -->
+            
+            <!--예제에서 필요한 js, css 링크-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+            
+           
+            
+            <!-- 클래스명은 변경x / 슬라이드 배너-->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide"><div class="c1"><div class="c2">Q.가맹점 이용안내</div><div class="c3"><b>A. </b>이용하시려는 지역을 선택하셔서<br>조회하실 수 있습니다. <br>가맹점 조회 시 확인된 편의점 브랜드는<br>전국 매장에서 이용이 가능합니다.</div></div></div>
+                <div class="swiper-slide"><div class="c1"><div class="c2">Q.잔액조회 방법은?</div><div class="c3"><b>A. </b>홈페이지 화면 중간[간편잔액조회]에서 카드번호를 입력 후 사용가능 포인트와 기간을 확인하실 수 있습니다.</div></div></div>
+                <div class="swiper-slide"><div class="c1"><div class="c2">Q.카드 재발급 방법은?</div><div class="c3"><b>A. </b>주소지 관할 주민센터에 방문하시면 바로 재발급이 가능합니다.<br> 선정 기준 확인 및 카드 발급은 주민센터<br>로 문의하시길 바랍니다.</div></div></div>
+                <div class="swiper-slide"><div class="c1"><div class="c2">Q.이사를 한 경우에는?</div><div class="c3"><b>A. </b>관내로 이사한 경우 기존 카드 그대로<br>이용이 가능하며, 타 지역으로 이사를<br>한 경우 기존 카드는 이용이 불가합니다.<br>(이사 후 주소지 주민센터 문의)</div></div></div>
+                <div class="swiper-slide"><div class="c1"><div class="c2">Q.편의점 이용안내</div><div class="c3"><b>A. </b>CU, GS25, SEVENELEVEN, 이마트24, 미니스톱 전 지점에서 사용이 가능<br>합니다. 편의점 구매가능 세부항목은<br> 방문한 편의점 직원에게 문의하여  확인 가능합니다.</div></div></div>
+                <div class="swiper-slide"><div class="c1"><div class="c2">Q.주말에도 사용 가능한가?</div><div class="c3"><b>A. </b>학생급식카드는 평일, 휴일 관계없이 이용 하실 수 있습니다. (단, 잔액 범위내 1일 최대 15.000원까지 사용 가능) 충전된 포인트의 사용기간, 잔액 확인 후 이용하시면 됩니다.</div></div></div>
+
+              </div>
+            
+              <!-- 네비게이션 -->
+              <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+              <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+            
+              <!-- 슬라이드 페이징 -->
+              <div class="swiper-pagination"></div>
+            </div><!-- 클래스명은 변경x / 슬라이드 배너-->
+            
+            <!--@@@@@@@@@@@@@@팝업창@@@@@@@@@@@@@@ -->
+            <div class="background">
+                <div class="window">
+                  <div class="popup">
+                    <div class="w1">카드잔액조회</div><!--팝업 제목-->
+                    <div class="w2">
+                        <form action="cost.html"><!--submit 시 잔액확인 페이지로-->
+
+                            <input  type="text"  placeholder="카드번호12자리" id="111111111111" maxlength="12" minlength="12" autofocus required><!--카드번호 12자리 입력 폼-->
+                           <div id="r1"><input type="submit" value="잔액조회"></div>  
+                            </form>
+                        </div>
+
+                    <button class="close" >닫기</button><br><br><!--버튼 클릭 시 팝업창 나옴 js-->
+                  <p>카드 앞면의 카드번호 12자리를<br> 입력하고 잔액조회 버튼을 눌러주세요</p>  
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+              </div><!--팝업창 끝-->
+             
+              
+              <div class="customerbanner"><!--질문배너-->
+                <div class="cusban" ><img src="image/button6.png" width="100%"height="120px" style="display:block;"></div><!--자주묻는 질문 배너 이미지-->
+                <div class="bten">
+                  <button type="button" onclick="javascript:bten()">자주묻는질문</button><!--자주묻는 질문 배너 버튼 클릭시 고객센터 페이지로 이동 js-->
+              </div>
+              </div>
+
+              <footer><!--푸터-->
+                <div class="sequrity"><a href="pri.html">개인정보처리방침</a>&nbsp&nbsp&nbsp문의사항 1544-3674</div>          
+              <div class="text">
+               (주)푸르미코리아 | 대표이사 : 홍영복 | 주소 : 인천광역시 부평구 부평대로 283 우림라이온스밸리 C동 1202호 | <br>사업자 등록번호 : 122-86-06593 | 고객센터 : 1544-3674 , 032)330-3364 (운영시간 : 평일 08:00~24:00 / 토, 일, 법정공휴일 09:00~24:00)
+             </div>
+         
+             </footer>
+             <div class="arrow"><a href="#top"><img src="image/arw.svg"width="70px" height="70px" ></a></div><!--페이지 최상단 이동 버튼 -->
+             <script src="js/scrt.js"></script><!--자바스크립트-->
+    </body>
+   
+</html>

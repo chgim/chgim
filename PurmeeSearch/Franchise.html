@@ -1,0 +1,189 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />	
+        <meta charset="utf-8">
+    
+        <title>Franchise</title>
+        <link rel="stylesheet"href="css/style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1700px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1400px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1200px)"> 
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1000px)"> 
+              
+<style>
+ 
+ .header{
+   background-image:url("image/제목을-입력해주세요_-001.png");
+   height:580px;
+   
+}
+#ban2 button{
+  width:100%;
+    height:50px;
+    margin-bottom:0px;
+    border: 2px solid #354e35;
+    background-color:  #354e35;
+    color:white;
+    font-size: 30px;
+
+}
+#ban2{
+  margin-top:10px;
+    
+    width:1200px;
+    text-align:center;
+    height:110px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom:0px;
+}
+#ban2 :hover{
+       color:#e5a039;
+   }
+ul{
+    display:inline-block;
+    list-style:none;
+}
+
+ul li {
+    list-style:none;
+    float:left;
+    font-size:1.15rem;
+    /*margin:0px 60px;*/
+    margin:0rem 3rem;
+    padding-top:0px;
+    margin-top:10px;
+    
+   }
+ul li:hover{
+    transform:translateY(-5px);
+}   
+   li a{
+    color:#354e35;
+   }
+   li a:hover{
+       color:#e5a039;
+   }
+   hr{
+    margin-bottom:80px;
+      background-color:#354e35;
+      height: 2px;
+      width: 1200px;
+      margin-left: auto;
+       margin-right: auto;
+   }
+</style>
+<link rel="stylesheet"href="css/style.css">
+    </head>
+    <body>
+    
+        <div class="header" style="text-align:center;">
+            <div class="d1"><!--메인 로고-->
+                <a href="main.html">PurmeeSearch</a>
+            </div>
+            
+            <div class="nav">
+                <ul>
+                  <li><a  href="WelfareIntro.html">아동급식카드</a></li>
+                    <li><a  href="Intro.html">푸르미 카드 소개</a></li> 
+                    <li><a class="show1">잔액조회</a></li>
+                    <li><a  href="Franchise.html">가맹점 조회</a></li>
+                    <li><a  href="Board.html">공지사항</a></li>
+                    <li><a  href="Service.html">고객센터</a></li>
+                </ul>  <!--///메뉴-->  
+              
+                     
+            </div>
+         
+    </div> <!--////헤더-->
+    <div class="sb"><!--서브제목-->
+        가맹점 조회
+      </div>
+      <hr>
+      
+      <div id="qq"><button class="show"></button></div>
+      
+      <div class="background"><!--팝업창-->
+        <div class="window">
+          <div class="popup">
+            <div class="w1">카드잔액조회</div>
+            <div class="w2">
+                <form action="cost.html">
+
+                    <input  type="text"  placeholder="카드번호12자리" id="111111111111" maxlength="12" minlength="12" autofocus required>
+                    <input type="submit" value="잔액조회"> 
+                    </form>
+                    
+
+                </div>
+
+
+
+
+            <button class="close" >닫기</button><br><br>
+          <p>카드 앞면의 카드번호 12자리를<br> 입력하고 잔액조회 버튼을 눌러주세요</p>  
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div><!--팝업창-->
+      
+
+
+      <div id="bon"><!--검색 틀-->
+      시검색<!--라벨 에러 body 스타일 부여-->
+      <select name="addressRegion" id="addressRegion1"></select>&nbsp;&nbsp;
+      관할구
+      <select name="addressDo" id="addressDo1"></select>&nbsp;&nbsp;
+      관할동
+      <select name="addressSiGunGu" id="addressSiGunGu1"></select><br><!--셀렉션 연동 js/jquery-->
+      <form action="">  
+        <!-- 드롭 다운 목록 -->
+        <label for="prod1">업종</label>
+        <select id="prod1">
+          <option value="special_3" selected>전체</option>
+          <option value="1">전체</option>
+          <option value="2">한식</option>
+          <option value="3">일식</option>
+          <option value="4">중식</option>
+          <option value="5">양식</option>
+          <option value="6">패스트푸드</option>
+          <option value="7">편의점</option>
+          <option value="3">제과점</option>
+        </select>
+        <label for="prod2">메뉴</label><input type="text" id="id" placeholder="메뉴를 입력하세요">
+        <label for="prod3">매장</label><input type="text" id="id" placeholder="가맹점을 입력하세요">
+      </form>
+    </div>
+    <div id="ban2">
+        <button type="button" onclick="javascript:sch()">검색</button><!--검색버튼 누를 시 가맹점 조회 완료 메세지 js-->
+    </div>
+    
+        
+
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10284.852550223914!2d126.65094953207002!3d37.38725223013745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b775a7e397a7f%3A0xf6eebddb04e780a7!2zQkJR7LmY7YKoIOyGoeuPhOy6oO2NvOyKpO2DgOyatOygkA!5e0!3m2!1sko!2skr!4v1653920163724!5m2!1sko!2skr" width="1200" height="900" style="border:0;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!--iframe을 통한 구글 맵 삽입-->
+</div>   
+
+    
+        <div class="arrow"><a href="#top"><img src="image/arw.svg"width="70px" height="70px" ></a></div><!--상승-->
+        <footer><!--푸터-->
+    
+          <div class="sequrity"><a href="pri.html">개인정보처리방침</a>&nbsp&nbsp&nbsp문의사항 1544-3674</div>
+         
+        <div class="text">
+         (주)푸르미코리아 | 대표이사 : 홍영복 | 주소 : 인천광역시 부평구 부평대로 283 우림라이온스밸리 C동 1202호 | <br>사업자 등록번호 : 122-86-06593 | 고객센터 : 1544-3674 , 032)330-3364 (운영시간 : 평일 08:00~24:00 / 토, 일, 법정공휴일 09:00~24:00)
+       </div>
+       
+       </footer>  
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="js/scrt.js"></script>
+</body>
+
+</html>

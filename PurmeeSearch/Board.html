@@ -1,0 +1,196 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Board</title>
+        <link rel="stylesheet"href="css/style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1700px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1400px)">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1200px)"> 
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and(max-width:1000px)"> 
+                
+<style>
+   .header{
+   background-image:url("image/제목을-입력해주세요_-001.png");
+   height:580px;
+   
+}
+ul{
+    display:inline-block;
+    list-style:none;
+}
+
+ul li {
+    list-style:none;
+    float:left;
+    font-size:1.15rem;
+    
+    margin:0rem 3rem;
+    padding-top:0px;
+    margin-top:10px;
+    
+   }
+ul li:hover{
+    transform:translateY(-5px);
+}   
+   li a{
+    color:#354e35;
+   }
+   li a:hover{
+       color:#e5a039;
+   }
+.t1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom:100px;
+    width:1200px;
+   
+}
+th{
+    background-color:#354e35 ;
+    color:white;
+    height:50px;
+    
+}
+td{
+    border: bottom 1px black;
+    border-bottom:1px solid lightgray;
+    height:40px;
+    background-color: white;
+}
+td a{
+    padding-top:10px;
+    color:black;
+    display:block;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+td a:hover{
+    color:#354e35;
+}
+hr{
+  margin-bottom:80px;
+    background-color:#354e35;
+    height: 2px;
+    width: 1200px;
+    margin-left: auto;
+     margin-right: auto;
+ }
+</style>
+<link rel="stylesheet"href="css/style.css">
+    </head>
+    <body>
+    
+        <div class="header" style="text-align:center;">
+            <div class="d1">
+                <a href="main.html">PurmeeSearch</a>
+            </div>
+            
+            <div class="nav">
+                <ul>
+                    <li><a  href="WelfareIntro.html">아동급식카드</a></li>
+                    <li><a  href="Intro.html">푸르미 카드 소개</a></li> 
+                    <li><a class="show1">잔액조회</a></li>
+                    <li><a  href="Franchise.html">가맹점 조회</a></li>
+                    <li><a  href="Board.html">공지사항</a></li>
+                    <li><a  href="Service.html">고객센터</a></li>
+                   
+                </ul>   
+              
+                     
+            </div>
+         
+    </div> 
+    <div class="sb">
+        공지사항
+      </div>
+      <hr>
+      <table class="t1">
+          <tr>
+              <th><h3>번호</h3></th>
+              <th><h3>제목</h3></th>
+              <th><h3>등록일</h3></th>
+              <th><h3>조회수</h3></th>
+          </tr>
+          
+          <tr>
+              <td>5</td>
+              <td><a href=Notice5.html>2022년도 인천광역시교육청 학생급식카드 사업 안내</a></td>
+              <td>2022.05.23</td>
+              <td>584</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href=Notice4.html>인천광역시교육청 학생급식카드 지원단가 인상 안내</a></td>
+            <td>2021.09.10</td>
+            <td>2849</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href=Notice3.html>인천광역시교육청 학생급식 전자카드 이용안내</a></td>
+            <td>2021.05.28</td>
+            <td>11004</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href=Notice2.html>[부평구] 2022 설연휴 가맹점 운영현황</a></td>
+            <td>2021.05.21</td>
+            <td>8645</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href=Notice1.html>[인천서구] 2022 설연휴 가맹점 운영현황</a></td>
+            <td>2021.03.25</td>
+            <td>9845</td>
+        </tr>
+      </table>
+
+
+      <div id="qq"><button class="show"></button></div>
+      
+      <div class="background">
+        <div class="window">
+          <div class="popup">
+            <div class="w1">카드잔액조회</div>
+            <div class="w2">
+                <form action="cost.html">
+
+                    <input  type="text"  placeholder="카드번호12자리" id="111111111111" maxlength="12" minlength="12" autofocus required>
+                    <input type="submit" value="잔액조회"> 
+                    </form>
+                    
+
+                </div>
+
+
+
+
+            <button class="close" >닫기</button><br><br>
+          <p>카드 앞면의 카드번호 12자리를<br> 입력하고 잔액조회 버튼을 눌러주세요</p>  
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    
+                 <div class="arrow"><a href="#top"><img src="image/arw.svg"width="70px" height="70px" ></a></div>
+                 <footer>
+            
+                  <div class="sequrity"><a href="pri.html">개인정보처리방침</a>&nbsp&nbsp&nbsp문의사항 1544-3674</div>
+                 
+                <div class="text">
+                 (주)푸르미코리아 | 대표이사 : 홍영복 | 주소 : 인천광역시 부평구 부평대로 283 우림라이온스밸리 C동 1202호 | <br>사업자 등록번호 : 122-86-06593 | 고객센터 : 1544-3674 , 032)330-3364 (운영시간 : 평일 08:00~24:00 / 토, 일, 법정공휴일 09:00~24:00)
+               </div>
+           
+               </footer>
+                 <script src="js/scrt.js"></script>
+        </body>
+        
+   
+</html>
