@@ -1,4 +1,4 @@
-<span style="font-size:25px">KimChanHo</span>
+<span style="font-size:25px">Kim Chan Ho</span>
 ----
 <p align="left">
 	<a href="">
