@@ -2,9 +2,9 @@
 ----
 <p align="left">
 	<a href="">
-		<img src="https://img.shields.io/badge/kcho1128@naver.com-000000?style=flat&logo=gmail&logoColor=white"></a>
+		<img src="https://img.shields.io/badge/kcho1128@naver.com-6DB33F?style=flat&logo=gmail&logoColor=white"></a>
 	<a href="">
-		<img src="https://img.shields.io/badge/chgim1128@gmail.com-000000?style=flat&logo=gmail&logoColor=white"></a>
+		<img src="https://img.shields.io/badge/chgim1128@gmail.com-ff0000?style=flat&logo=gmail&logoColor=white"></a>
 	<a href="https://github.com/chgim">
 		<img src="https://img.shields.io/badge/chgim's github-%23121011.svg?style=flat&logo=github&logoColor=white"></a>
 </p>
