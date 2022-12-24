@@ -11,10 +11,17 @@
 
 <span style="font-size:25px">Platforms & Languages</span>
 ---
-<p>Languages</p>
+<p>Language</p>
 <p>
+	<img src="https://img.shields.io/badge/html-ff7f00?style=flat&logo=html&logoColor=white">
+	<img src="https://img.shields.io/badge/css-0067a3?style=flat&logo=css&logoColor=white">
+	<img src="https://img.shields.io/badge/javascript-ffd400?style=flat&logo=javascript&logoColor=white">
 	<img src="https://img.shields.io/badge/java-007396?style=flat&logo=java&logoColor=white">
 	<img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white">
+</p>
+<p>Library</p>
+<p>
+	<img src="https://img.shields.io/badge/react-50bcdf?style=flat&logo=react&logoColor=white">
 </p>
 <p>Framework</p>
 <p>
