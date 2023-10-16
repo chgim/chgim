@@ -19,15 +19,12 @@
 	<img src="https://img.shields.io/badge/java-007396?style=flat&logo=java&logoColor=white">
 	<img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white">
 </p>
-<p>Library</p>
-<p>
-	<img src="https://img.shields.io/badge/react-50bcdf?style=flat&logo=react&logoColor=white">
-	
-</p>
+
 <p>Framework</p>
 <p>
 	<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=Spring Boot&logoColor=white">
 	<img src="https://img.shields.io/badge/django-092E20?style=flat&logo=django&logoColor=white">
+	<img src="https://img.shields.io/badge/react-50bcdf?style=flat&logo=react&logoColor=white">
 </p>
 <p>DATABASE</p>
 <p>
