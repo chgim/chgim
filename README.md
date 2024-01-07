@@ -11,28 +11,23 @@
 
 <span style="font-size:25px">Platforms & Languages</span>
 ---
-<p>Language</p>
+<h3>Programing Languages</h3>
 <p>
-	<img src="https://img.shields.io/badge/html-ff7f00?style=flat&logo=html5&logoColor=white">
-	<img src="https://img.shields.io/badge/css-0067a3?style=flat&logo=css3&logoColor=white">
-	<img src="https://img.shields.io/badge/javascript-ffd400?style=flat&logo=javascript&logoColor=white">
-	<img src="https://img.shields.io/badge/java-007396?style=flat&logo=java&logoColor=white">
-	<img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white">
+	Java11, JavaScript, HTML5, CSS3, Python
 </p>
 
-<p>Framework</p>
+<h3>Framework/ Library</h3>
 <p>
-	<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat&logo=Spring Boot&logoColor=white">
-	<img src="https://img.shields.io/badge/django-092E20?style=flat&logo=django&logoColor=white">
+	React, Django, Spring Boot, Spring Security, JWT 
 	
 </p>
-<p>Library</p>
+<h3>Server</h3>
 <p>
-	<img src="https://img.shields.io/badge/react-50bcdf?style=flat&logo=react&logoColor=white">
+	Oracle, H2, Apache Tomcat, Redis
 </p>
-<p>DATABASE</p>
+<h3>Tooling/ DevOps</h3>
 <p>
-	<img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white">
-	<img src="https://img.shields.io/badge/oracle-4479A1?style=flat&logo=oracle&logoColor=white">
+	GitHub, IntelliJ IDEA, Visual Studio Code, Postman
 </p>
+
 
