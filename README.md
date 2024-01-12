@@ -23,7 +23,7 @@
 </p>
 <h3>Server</h3>
 <p>
-	Oracle, H2, Apache Tomcat, Redis
+	Oracle, H2, MySQL, Apache Tomcat, Redis
 </p>
 <h3>Tooling/ DevOps</h3>
 <p>
